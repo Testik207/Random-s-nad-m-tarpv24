@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Sõnad - Sõnavara Kontroll</title>
+    <!-- Комментарий 1: Подключаем внешний файл стилей CSS для оформления интерфейса -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Hajusrakenduste sõnavara kontroll</h1>
+
+    <!-- Комментарий 2: Создаем общий контейнер (таблицу из двух колонок) для разных режимов перевода -->
+    <div class="container">
+        
+        <!-- 1. veerg: Eesti -> Vene -->
+        <div class="card">
+            <h2>1. Variant: Eesti ➔ Vene</h2>
+            <p>Tõlgi järgmine eesti sõna vene keelde:</p>
+            <!-- Комментарий 3: Блок для отображения случайного эстонского слова -->
+            <div id="et-word" class="word-display">-</div>
+            <input type="text" id="et-input" placeholder="Sisesta vene keeles...">
+            <button onclick="checkET()">Kontrolli</button>
+            <div id="et-result" class="result"></div>
+        </div>
+
+        <!-- 2. veerg: Vene -> Eesti -->
+        <div class="card">
+            <h2>2. Variant: Vene ➔ Eesti</h2>
+            <p>Переведите следующее русское слово на эстонский:</p>
+            <!-- Комментарий 4: Блок для отображения случайного русского слова -->
+            <div id="ru-word" class="word-display">-</div>
+            <input type="text" id="ru-input" placeholder="Sisesta eesti keeles...">
+            <button onclick="checkRU()">Kontrolli</button>
+            <div id="ru-result" class="result"></div>
+        </div>
+
+    </div>
+
+    <!-- Комментарий 5: Подключаем внешний файл логики JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
