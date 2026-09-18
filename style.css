@@ -1,0 +1,79 @@
+/* Комментарий 6: Базовые стили страницы, выравнивание и шрифт */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* Контейнер для двух колонок */
+.container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    flex-wrap: wrap;
+}
+
+/* Стили карточек (колонок таблицы) */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.2rem;
+    color: #34495e;
+}
+
+.word-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #2980b9;
+}
+
+input {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #219653;
+}
+
+.result {
+    margin-top: 15px;
+    font-weight: bold;
+}
